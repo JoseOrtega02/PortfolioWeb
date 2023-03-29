@@ -1,0 +1,253 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.hero-container{
+    width: 100%;
+    text-align: center;
+    color: orange;
+    margin-top:30px;
+    font-size: 28px;
+}
+.hero-container>img{
+    width: 40vw;
+    border-radius:5px;
+}
+.hero-container >a i{
+    color: orange;
+    text-decoration: none;
+    margin-top:40px;
+}
+
+.hero-container>a:hover i{
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+}
+/* projects */
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 50px;
+    column-gap: 10px;
+    align-content: center;
+    padding-top:50px;
+}
+
+#Project-1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#Project-1>img{
+    width:30vw
+}
+
+.project{
+    display: flex;
+    text-align: center;
+    width:80%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 20px;
+    
+}
+.project>div>h2,p{
+    color: orange;
+    margin-bottom: 20px;
+}
+.project>div>div>a{
+    text-decoration: none;
+    color: orange;
+    font-size: 20px;
+   
+}
+.project>div>div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content:center
+}
+.project>div>div>a:hover{
+    transition: all 0.5s;
+    transform: scale(1.5);
+    color: rgb(95, 62, 0);
+}
+.project>div>div>{
+    padding: 10px;
+}
+.project>img{
+    width: 20vw;
+  border-radius: 5px;
+}
+
+.project>img:hover{
+    transition: all 0.5s;
+    transform: scale(1.5);
+    
+}
+
+/* tecno */
+.tecno-container{
+    text-align: center;
+    margin-top: 150px;
+    
+}
+.tecno-container>div>h1{
+    color: orange;
+    font-size: 26px;
+}
+.tecno-container>div>p{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.img-container{
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+    gap: 10px;
+}
+.img-container>img{
+    width: 150px;
+}
+
+/* education */
+.education-container{
+    text-align: center;
+    margin-top: 150px;
+    color: orange;
+    font-size: 26px;
+}
+.ed-card{
+    color: orange;
+    margin-top:50px;
+    font-size: 18px;
+}
+.ed-card>img{
+    width:50vw;
+    border-radius: 5px;
+}
+/* contact */
+.contact-container{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 28px;
+    color: orange;
+    margin-bottom: 50px;
+}
+.a-div{
+    display:flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content:center
+}
+.a-div>a{
+        color: orange;
+        text-decoration: none;
+        margin-top:40px;
+        font-size: 38px;
+}
+.a-div>a:hover i{
+        transform: scale(1.5);
+        transition: all 0.5s ease;
+    }
+
+    .btn-menu{
+        display:none;
+    }
+.close{
+    display:block;
+}
+
+@media screen and (max-width: 868px) {
+    .navmenu{
+        background-color: #160b00e6;
+    }
+    .close{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+        position: fixed;
+        right: 5vw;
+        font-size: 22px;
+        color: #ffae00;
+    }
+
+
+
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+    #Project-1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .project>img{
+        width:30vw;
+    }
+}
+
+@media screen and (max-width: 468px){
+    .project{
+        flex-direction: column;
+
+    }
+    #Project-1>img{
+        width:50vw;
+    }
+    .project>img{
+        width:50vw;
+    }
+    .img-container>img{
+        width: 100px;
+    }
+    .hero-container>img{
+        width: 60vw;
+    }
+}
+
+    /* scrollbar */
+
+    /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ffae00 #331900;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 18px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #331900;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffae00;
+    border-radius: 10px;
+    border: 5px solid #331900;
+  }
